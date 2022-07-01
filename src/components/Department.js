@@ -6,9 +6,8 @@ const Department = ({ department }) => {
 
     return (
         <div className={ dom.includes(department.codeRegion) ? 'department-card dom' : 'department-card'}>
+            <span className="number">{ department.code }</span>
             <h1>{ department.nom }</h1>
-            <p>Code : { department.code }</p>
-            <p>Code région : { department.codeRegion }</p>
             <p className='department-region'>Région : { department.region.nom }</p>
         </div>
     );
